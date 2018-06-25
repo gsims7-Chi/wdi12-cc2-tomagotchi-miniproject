@@ -1,0 +1,12 @@
+#tamagotchi{
+	text-align: center;
+	margin: 0 auto;
+
+	width: 60%;
+}
+
+
+#actions {
+	display: flex;
+	justify-content: space-between;
+}
