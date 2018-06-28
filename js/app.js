@@ -12,6 +12,10 @@ class Tamagochi {
 		this.boredom = 0;
 		this.hunger = 0;
 	}
+	//make a method that names your tamagotchi and prints it to the screen
+	name(){
+		//let user be able to name the tamagotchI
+	}
 	// make methods that call each paramater and tracks them
 	imHungry() {
 	//every interval the variable gets + 1
@@ -71,6 +75,18 @@ class Tamagochi {
 		}
 	}
 
+	death(){
+		if (this.hunger === 10 && this.energy === 10 && this.boredom === 10){
+			$('#actions').text(`I can't go on. How did we get here? You suck master.`)
+		}else if (this.boredom === 10){
+			$('#actions').text(`You've actually bored me to death.`)
+		}else if(this.hunger === 10){
+			$('#actions').text(`I've starved to death.`)
+		}else if (this.energy === 10) {
+			$('#actions').text(`Master I'm too exaughsted to go on`)
+		}
+	}
+
 	setTimer () {
 	 // Start an interval
 	 const timer = setInterval(() => {
@@ -81,6 +97,7 @@ class Tamagochi {
 	   patamon.bored()
 	   patamon.birthday()
 	   patamon.evolution1()
+	   patamon.death()
 	   if(this.hunger === 10||this.energy === 10||this.boredom === 10){
 	   	 clearInterval(timer)
 	   	 console.log('he died')
