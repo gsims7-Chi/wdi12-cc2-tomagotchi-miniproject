@@ -5,34 +5,37 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
 </head>
-<body>
-	
+<body background="https://s-media-cache-ak0.pinimg.com/originals/08/73/84/0873840a290eb75ab30794df80ab0d57.jpg">
 	<div id="tamagotchi">
-		<img id="image" src="http://rs228.pbsrc.com/albums/ee295/naru2_321/digimon/patamon.gif~c200" />
-		<div id="actions">
-			<div id="hunger">
-				<h3 id="hunger-score">Hunger: 0</h3>
-				<button class="stats">Feed Him</button>
-				
-			</div>
-			<div class="stats">
-				<h3 id="boredom-score">Boredom: 0</h3>
-				<button id="play">Play with him</button>
-				
-			</div>
-			<div class="stats">
-				<h3 id="energy-score">Energy: 0</h3>
-				<button id = "sleep">Send him to bed</button>
-				
-			</div>
-			<div class="stats">
-				<h3 id="age">Age: 0</h3>	
-			</div>
+		<div id="backdrop">
+			<div id="pet">
+					<img id="sprite" src="http://rs228.pbsrc.com/albums/ee295/naru2_321/digimon/patamon.gif~c200" />
+					<div id="actions">
+					
+						<div class="stats">
+							<h3 id="hunger-score">Hunger: 0</h3>
+							<button id="eat">Feed him</button>	
+						</div>
+						<div class="stats">
+							<h3 id="boredom-score">Boredom: 0</h3>
+							<button id="play">Play with me</button>
+							
+						</div>
+						<div class="stats">
+							<h3 id="energy-score">Energy: 0</h3>
+							<button id = "sleep">Send me to bed</button>
+							
+						</div>
+						<div class="stats">
+							<h3 id="age">Age: 0</h3>	
+						</div>
 			
+				</div>
+			</div>
 		</div>
-		
 	</div>
-
+	
+	
 	<script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>
